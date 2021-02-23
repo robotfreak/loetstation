@@ -1,0 +1,168 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 60C7980B
+P 5700 4050
+AR Path="/60C7980B" Ref="SW?"  Part="1" 
+AR Path="/60C58A4D/60C5A69E/60C7980B" Ref="SW601"  Part="1" 
+F 0 "SW601" H 5700 4417 50  0000 C CNN
+F 1 "Encoder" H 5700 4326 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 5550 4210 50  0001 C CNN
+F 3 "~" H 5700 4310 50  0001 C CNN
+	1    5700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C79811
+P 6150 4300
+AR Path="/60C79811" Ref="#PWR?"  Part="1" 
+AR Path="/60C58A4D/60C5A69E/60C79811" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 6150 4050 50  0001 C CNN
+F 1 "GND" H 6155 4127 50  0000 C CNN
+F 2 "" H 6150 4300 50  0001 C CNN
+F 3 "" H 6150 4300 50  0001 C CNN
+	1    6150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C79817
+P 5150 4400
+AR Path="/60C79817" Ref="#PWR?"  Part="1" 
+AR Path="/60C58A4D/60C5A69E/60C79817" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 5150 4150 50  0001 C CNN
+F 1 "GND" H 5155 4227 50  0000 C CNN
+F 2 "" H 5150 4400 50  0001 C CNN
+F 3 "" H 5150 4400 50  0001 C CNN
+	1    5150 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4050 5150 4050
+Wire Wire Line
+	5150 4050 5150 4400
+Wire Wire Line
+	6150 4150 6150 4300
+Wire Wire Line
+	6000 4150 6150 4150
+$Comp
+L Device:R R?
+U 1 1 60C79821
+P 6200 3700
+AR Path="/60C79821" Ref="R?"  Part="1" 
+AR Path="/60C58A4D/60C5A69E/60C79821" Ref="R603"  Part="1" 
+F 0 "R603" H 6270 3746 50  0000 L CNN
+F 1 "10k" H 6270 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6130 3700 50  0001 C CNN
+F 3 "~" H 6200 3700 50  0001 C CNN
+	1    6200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C79827
+P 5200 3700
+AR Path="/60C79827" Ref="R?"  Part="1" 
+AR Path="/60C58A4D/60C5A69E/60C79827" Ref="R602"  Part="1" 
+F 0 "R602" H 5270 3746 50  0000 L CNN
+F 1 "10k" H 5270 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5130 3700 50  0001 C CNN
+F 3 "~" H 5200 3700 50  0001 C CNN
+	1    5200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C7982D
+P 4950 3700
+AR Path="/60C7982D" Ref="R?"  Part="1" 
+AR Path="/60C58A4D/60C5A69E/60C7982D" Ref="R601"  Part="1" 
+F 0 "R601" H 5020 3746 50  0000 L CNN
+F 1 "10k" H 5020 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4880 3700 50  0001 C CNN
+F 3 "~" H 4950 3700 50  0001 C CNN
+	1    4950 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3550 4950 3500
+Wire Wire Line
+	4950 3500 5050 3500
+Wire Wire Line
+	5050 3500 5050 3450
+Wire Wire Line
+	5050 3500 5200 3500
+Wire Wire Line
+	5200 3500 5200 3550
+Connection ~ 5050 3500
+Wire Wire Line
+	5200 3850 5200 3950
+Wire Wire Line
+	5200 3950 5400 3950
+Wire Wire Line
+	4950 3850 4950 4150
+Wire Wire Line
+	4950 4150 5400 4150
+Wire Wire Line
+	6000 3950 6200 3950
+Wire Wire Line
+	6200 3950 6200 3850
+Wire Wire Line
+	6200 3450 6200 3550
+Text GLabel 4700 3950 0    50   Input ~ 0
+ENCA
+Text GLabel 4700 4150 0    50   Input ~ 0
+ENCB
+Text GLabel 6400 3950 2    50   Input ~ 0
+ENCSW
+Wire Wire Line
+	6200 3950 6400 3950
+Connection ~ 6200 3950
+Wire Wire Line
+	5200 3950 4700 3950
+Connection ~ 5200 3950
+Wire Wire Line
+	4950 4150 4700 4150
+Connection ~ 4950 4150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60C79849
+P 5050 3450
+AR Path="/60C79849" Ref="#PWR?"  Part="1" 
+AR Path="/60C58A4D/60C5A69E/60C79849" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 5050 3300 50  0001 C CNN
+F 1 "+3.3V" H 5065 3623 50  0000 C CNN
+F 2 "" H 5050 3450 50  0001 C CNN
+F 3 "" H 5050 3450 50  0001 C CNN
+	1    5050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60C7984F
+P 6200 3450
+AR Path="/60C7984F" Ref="#PWR?"  Part="1" 
+AR Path="/60C58A4D/60C5A69E/60C7984F" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 6200 3300 50  0001 C CNN
+F 1 "+3.3V" H 6215 3623 50  0000 C CNN
+F 2 "" H 6200 3450 50  0001 C CNN
+F 3 "" H 6200 3450 50  0001 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
