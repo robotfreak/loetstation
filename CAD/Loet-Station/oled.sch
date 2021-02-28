@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -30,19 +30,6 @@ F 3 "" H 5950 3500 50  0001 C CNN
 	1    5950 3500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 60C872C5
-P 5400 3200
-AR Path="/60C872C5" Ref="#PWR?"  Part="1" 
-AR Path="/60C58A4D/60C5A6B7/60C872C5" Ref="#PWR0501"  Part="1" 
-F 0 "#PWR0501" H 5400 3050 50  0001 C CNN
-F 1 "VCC" H 5415 3373 50  0000 C CNN
-F 2 "" H 5400 3200 50  0001 C CNN
-F 3 "" H 5400 3200 50  0001 C CNN
-	1    5400 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5150 3350 5400 3350
 Wire Wire Line
@@ -65,5 +52,16 @@ F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4950 3450 50 
 F 3 "~" H 4950 3450 50  0001 C CNN
 	1    4950 3450
 	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 603E81BB
+P 5400 3200
+F 0 "#PWR?" H 5400 3050 50  0001 C CNN
+F 1 "+3.3V" H 5415 3373 50  0000 C CNN
+F 2 "" H 5400 3200 50  0001 C CNN
+F 3 "" H 5400 3200 50  0001 C CNN
+	1    5400 3200
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

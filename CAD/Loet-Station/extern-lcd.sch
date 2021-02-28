@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:Conn_01x04_Male J601
-U 1 1 603F45A4
-P 4750 2900
-F 0 "J601" H 4858 3181 50  0000 C CNN
-F 1 "IO_Conn" H 4858 3090 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4750 2900 50  0001 C CNN
-F 3 "~" H 4750 2900 50  0001 C CNN
-	1    4750 2900
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0601
 U 1 1 603F4B1B
@@ -62,4 +51,19 @@ Wire Wire Line
 	5300 2800 5300 2500
 Wire Wire Line
 	4950 2800 5300 2800
+$Comp
+L Connector:Conn_01x08_Male J?
+U 1 1 603E87EA
+P 4750 3100
+F 0 "J?" H 4858 3581 50  0000 C CNN
+F 1 "IO_Conn" H 4858 3490 50  0000 C CNN
+F 2 "" H 4750 3100 50  0001 C CNN
+F 3 "~" H 4750 3100 50  0001 C CNN
+	1    4750 3100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4950 3200
+NoConn ~ 4950 3300
+NoConn ~ 4950 3400
+NoConn ~ 4950 3500
 $EndSCHEMATC
