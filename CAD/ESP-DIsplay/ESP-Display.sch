@@ -412,17 +412,6 @@ F 3 "" H 5450 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Male J101
-U 1 1 603BB008
-P 2150 5000
-F 0 "J101" H 2258 5281 50  0000 C CNN
-F 1 "IO_Conn" H 2258 5190 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2150 5000 50  0001 C CNN
-F 3 "~" H 2150 5000 50  0001 C CNN
-	1    2150 5000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0101
 U 1 1 603BC34F
 P 2650 4550
@@ -586,4 +575,31 @@ Wire Wire Line
 Connection ~ 5700 5100
 Wire Wire Line
 	6100 5100 6250 5100
+$Comp
+L Connector:Conn_01x08_Male J101
+U 1 1 603C3897
+P 2150 5200
+F 0 "J101" H 2258 5681 50  0000 C CNN
+F 1 "IO_Conn" H 2258 5590 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2150 5200 50  0001 C CNN
+F 3 "~" H 2150 5200 50  0001 C CNN
+	1    2150 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 5300 2    50   Input ~ 0
+ADC1
+Text GLabel 2600 5400 2    50   Input ~ 0
+ADC2
+Text GLabel 2600 5500 2    50   Input ~ 0
+ADC3
+Text GLabel 2600 5600 2    50   Input ~ 0
+ADC4
+Wire Wire Line
+	2350 5300 2600 5300
+Wire Wire Line
+	2350 5400 2600 5400
+Wire Wire Line
+	2350 5500 2600 5500
+Wire Wire Line
+	2350 5600 2600 5600
 $EndSCHEMATC
