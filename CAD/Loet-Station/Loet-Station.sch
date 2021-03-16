@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -313,28 +313,6 @@ F 1 "SW_T1" H 10300 3644 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 10300 3650 50  0001 C CNN
 F 3 "~" H 10300 3650 50  0001 C CNN
 	1    10300 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRF9540N Q102
-U 1 1 603A6BEB
-P 4700 1800
-F 0 "Q102" H 4904 1754 50  0000 L CNN
-F 1 "IRF9540N" H 4904 1845 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4900 1725 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf9540n.pdf" H 4700 1800 50  0001 L CNN
-	1    4700 1800
-	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_BJT:BC547 Q101
-U 1 1 603A8243
-P 3950 2100
-F 0 "Q101" H 4141 2146 50  0000 L CNN
-F 1 "BC547" H 4141 2055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4150 2025 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 3950 2100 50  0001 L CNN
-	1    3950 2100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -722,55 +700,6 @@ Wire Wire Line
 	7250 1250 7400 1250
 Wire Wire Line
 	7400 1250 7400 950 
-Text GLabel 3750 6050 2    50   Input ~ 0
-TEMP
-$Comp
-L Device:R R101
-U 1 1 60B80E82
-P 3250 6300
-AR Path="/60B80E82" Ref="R101"  Part="1" 
-AR Path="/60A4D645/60B19D17/60B80E82" Ref="R?"  Part="1" 
-F 0 "R101" H 3320 6346 50  0000 L CNN
-F 1 "10k" H 3320 6255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3180 6300 50  0001 C CNN
-F 3 "~" H 3250 6300 50  0001 C CNN
-	1    3250 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R104
-U 1 1 60B80E88
-P 3450 6050
-AR Path="/60B80E88" Ref="R104"  Part="1" 
-AR Path="/60A4D645/60B19D17/60B80E88" Ref="R?"  Part="1" 
-F 0 "R104" V 3243 6050 50  0000 C CNN
-F 1 "39k" V 3334 6050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3380 6050 50  0001 C CNN
-F 3 "~" H 3450 6050 50  0001 C CNN
-	1    3450 6050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3750 6050 3600 6050
-Wire Wire Line
-	3250 6050 3250 6150
-$Comp
-L power:GND #PWR0101
-U 1 1 60B80E92
-P 3250 6550
-AR Path="/60B80E92" Ref="#PWR0101"  Part="1" 
-AR Path="/60A4D645/60B19D17/60B80E92" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0101" H 3250 6300 50  0001 C CNN
-F 1 "GND" H 3255 6377 50  0000 C CNN
-F 2 "" H 3250 6550 50  0001 C CNN
-F 3 "" H 3250 6550 50  0001 C CNN
-	1    3250 6550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 6450 3250 6550
-Text GLabel 2650 6050 0    50   Input ~ 0
-ADC0
 NoConn ~ 6200 2850
 NoConn ~ 6200 2950
 NoConn ~ 6200 3050
@@ -923,11 +852,6 @@ F 3 "~" H 1150 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 6050 3250 6050
-Connection ~ 3250 6050
-Wire Wire Line
-	2650 6050 3250 6050
-Wire Wire Line
 	9900 3450 9900 3550
 Wire Wire Line
 	10100 3450 9900 3450
@@ -962,23 +886,23 @@ Wire Wire Line
 	4050 1800 4050 1650
 Connection ~ 4050 1800
 $Comp
-L Device:D_Zener D?
+L Device:D_Zener D102
 U 1 1 603FFB08
 P 4300 1500
-F 0 "D?" V 4254 1580 50  0000 L CNN
+F 0 "D102" V 4254 1580 50  0000 L CNN
 F 1 "D_Zener" V 4345 1580 50  0000 L CNN
-F 2 "" H 4300 1500 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 4300 1500 50  0001 C CNN
 F 3 "~" H 4300 1500 50  0001 C CNN
 	1    4300 1500
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R105
 U 1 1 604072AB
 P 4050 2500
-F 0 "R?" H 4120 2546 50  0000 L CNN
+F 0 "R105" H 4120 2546 50  0000 L CNN
 F 1 "R" H 4120 2455 50  0000 L CNN
-F 2 "" V 3980 2500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3980 2500 50  0001 C CNN
 F 3 "~" H 4050 2500 50  0001 C CNN
 	1    4050 2500
 	1    0    0    -1  
@@ -987,4 +911,26 @@ Wire Wire Line
 	4050 2300 4050 2350
 Wire Wire Line
 	3650 2100 3750 2100
+$Comp
+L Transistor_FET:IRF7404 Q102
+U 1 1 604E313E
+P 4700 1800
+F 0 "Q102" H 4905 1846 50  0000 L CNN
+F 1 "IRF7404" H 4905 1755 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4900 1725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 4700 1800 50  0001 L CNN
+	1    4700 1800
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q101
+U 1 1 604FE51F
+P 3950 2100
+F 0 "Q101" H 4141 2146 50  0000 L CNN
+F 1 "BC847" H 4141 2055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4150 2025 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3950 2100 50  0001 L CNN
+	1    3950 2100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -18,11 +18,5 @@ S 6850 1050 2050 900
 U 60B19D17
 F0 "d1-mini" 50
 F1 "d1-mini.sch" 50
-$EndSheet
-$Sheet
-S 6850 2500 2050 850 
-U 6039CA1A
-F0 "esp32-mini" 50
-F1 "esp32-mini.sch" 50
 $EndSheet
 $EndSCHEMATC

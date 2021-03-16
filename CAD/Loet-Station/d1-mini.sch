@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -13,11 +13,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 5650 3750 2    50   Output ~ 0
+Text GLabel 6150 3250 2    50   Output ~ 0
 CS
-Text GLabel 5650 3250 2    50   Output ~ 0
-NEO
 Text GLabel 5650 3350 2    50   Output ~ 0
+NEO
+Text GLabel 5650 3750 2    50   Output ~ 0
 PWM
 $Comp
 L power:GND #PWR?
@@ -60,46 +60,16 @@ F 3 "" H 5050 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4950 4150 4950 4500
-Text GLabel 5650 3650 2    50   Output ~ 0
-MOSI
-Text GLabel 5650 3450 2    50   Output ~ 0
-SCK
-Text GLabel 5650 3550 2    50   Output ~ 0
+Text GLabel 6150 2950 2    50   Output ~ 0
 DC
-Text GLabel 5650 2950 2    50   BiDi ~ 0
+Text GLabel 5650 3250 2    50   BiDi ~ 0
 READ
 Text GLabel 4450 2950 0    50   Input ~ 0
 RESET
 Wire Wire Line
 	4450 2950 4550 2950
-Wire Wire Line
-	5350 3450 5650 3450
-Wire Wire Line
-	5350 2950 5650 2950
-Wire Wire Line
-	5350 3250 5650 3250
-Wire Wire Line
-	5350 3350 5650 3350
-Text GLabel 5650 3050 2    50   BiDi ~ 0
-I2C_SCL
-Text GLabel 5650 3150 2    50   BiDi ~ 0
-I2C_SDA
-Wire Wire Line
-	5350 3050 5650 3050
-Wire Wire Line
-	5350 3150 5650 3150
-Text GLabel 5650 2850 2    50   Input ~ 0
-ADC0
-Wire Wire Line
-	5350 2850 5650 2850
 NoConn ~ 4550 3250
 NoConn ~ 4550 3350
-Wire Wire Line
-	5350 3750 5650 3750
-Wire Wire Line
-	5350 3650 5650 3650
-Wire Wire Line
-	5350 3550 5650 3550
 $Comp
 L MCU_Module:WeMos_D1_mini U?
 U 1 1 60B1EA80
@@ -117,4 +87,44 @@ Wire Wire Line
 	4850 2400 4850 2550
 Wire Wire Line
 	5050 2400 5050 2550
+Text GLabel 5650 3650 2    50   Input ~ 0
+MOSI
+Text GLabel 5650 3450 2    50   Input ~ 0
+SCK
+Wire Wire Line
+	5350 3350 5650 3350
+Wire Wire Line
+	5350 3750 5650 3750
+Text GLabel 5650 2850 2    50   Input ~ 0
+TEMP
+Wire Wire Line
+	5350 2850 5650 2850
+Wire Wire Line
+	5350 3250 5650 3250
+Wire Wire Line
+	5350 3450 5650 3450
+Wire Wire Line
+	5350 3650 5650 3650
+Text GLabel 6150 3050 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 6150 3150 2    50   Input ~ 0
+I2C_SDA
+Wire Wire Line
+	5350 3050 6050 3050
+Wire Wire Line
+	5350 3150 6050 3150
+Wire Wire Line
+	6150 2950 6050 2950
+Wire Wire Line
+	6050 2950 6050 3050
+Connection ~ 6050 3050
+Wire Wire Line
+	6050 3050 6150 3050
+Wire Wire Line
+	6150 3250 6050 3250
+Wire Wire Line
+	6050 3250 6050 3150
+Connection ~ 6050 3150
+Wire Wire Line
+	6050 3150 6150 3150
 $EndSCHEMATC
