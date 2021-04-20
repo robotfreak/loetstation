@@ -167,8 +167,6 @@ Wire Wire Line
 	10100 1300 9900 1300
 Connection ~ 9900 1300
 Wire Wire Line
-	9900 800  9900 1300
-Wire Wire Line
 	10100 800  9900 800 
 Wire Wire Line
 	10400 800  10750 800 
@@ -933,4 +931,78 @@ F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_B
 	1    3950 2100
 	1    0    0    -1  
 $EndComp
+Text GLabel 9450 3450 0    50   Input ~ 0
+T1
+Text GLabel 9450 3050 0    50   Input ~ 0
+T2
+Text GLabel 9450 2600 0    50   Input ~ 0
+T3
+Text GLabel 9450 2150 0    50   Input ~ 0
+TUP
+Text GLabel 9450 1750 0    50   Input ~ 0
+TDN
+Text GLabel 9450 1300 0    50   Input ~ 0
+TON
+Wire Wire Line
+	9900 800  9900 1300
+Wire Wire Line
+	9450 1300 9900 1300
+Wire Wire Line
+	9450 1750 9900 1750
+Wire Wire Line
+	9450 2150 9900 2150
+Wire Wire Line
+	9450 2600 9900 2600
+Wire Wire Line
+	9450 3050 9900 3050
+Wire Wire Line
+	9450 3450 9900 3450
+$Comp
+L Connector:Barrel_Jack_Switch J103
+U 1 1 6088E786
+P 6150 2050
+F 0 "J103" H 5920 2092 50  0000 R CNN
+F 1 "Barrel_Jack_Switch" H 5920 2001 50  0000 R CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 6200 2010 50  0001 C CNN
+F 3 "~" H 6200 2010 50  0001 C CNN
+	1    6150 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 608904F2
+P 5550 2250
+F 0 "#PWR0126" H 5550 2000 50  0001 C CNN
+F 1 "GND" H 5555 2077 50  0000 C CNN
+F 2 "" H 5550 2250 50  0001 C CNN
+F 3 "" H 5550 2250 50  0001 C CNN
+	1    5550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VS #PWR0127
+U 1 1 60891AF5
+P 5550 1800
+F 0 "#PWR0127" H 5350 1650 50  0001 C CNN
+F 1 "VS" H 5565 1973 50  0000 C CNN
+F 2 "" H 5550 1800 50  0001 C CNN
+F 3 "" H 5550 1800 50  0001 C CNN
+	1    5550 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1800 5550 1950
+Wire Wire Line
+	5550 1950 5850 1950
+Wire Wire Line
+	5850 2050 5750 2050
+Wire Wire Line
+	5550 2050 5550 2250
+Wire Wire Line
+	5850 2150 5750 2150
+Wire Wire Line
+	5750 2150 5750 2050
+Connection ~ 5750 2050
+Wire Wire Line
+	5750 2050 5550 2050
 $EndSCHEMATC
