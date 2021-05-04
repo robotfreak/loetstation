@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -30,11 +30,5 @@ S 4950 5050 1050 650
 U 603BB4B3
 F0 "neopixel" 50
 F1 "neopixel.sch" 50
-$EndSheet
-$Sheet
-S 5000 4000 1050 550 
-U 6035E9A5
-F0 "i2c-adc" 50
-F1 "i2c-adc.sch" 50
 $EndSheet
 $EndSCHEMATC

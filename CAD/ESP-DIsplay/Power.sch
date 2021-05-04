@@ -1,0 +1,232 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 608AB297
+P 5050 5500
+AR Path="/608AB297" Ref="#PWR?"  Part="1" 
+AR Path="/60A4D645/60B1EE3B/608AB297" Ref="#PWR?"  Part="1" 
+AR Path="/60888782/608AB297" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 5050 5250 50  0001 C CNN
+F 1 "GND" H 5055 5327 50  0000 C CNN
+F 2 "" H 5050 5500 50  0001 C CNN
+F 3 "" H 5050 5500 50  0001 C CNN
+	1    5050 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4750 4350 5050
+Wire Wire Line
+	5050 5350 5050 5500
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U?
+U 1 1 608AB29F
+P 5050 5050
+AR Path="/608AB29F" Ref="U?"  Part="1" 
+AR Path="/60A4D645/60B1EE3B/608AB29F" Ref="U?"  Part="1" 
+AR Path="/60888782/608AB29F" Ref="U801"  Part="1" 
+F 0 "U801" H 5050 5292 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 5050 5201 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5050 5250 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 5150 4800 50  0001 C CNN
+	1    5050 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 5050 5550 5050
+Wire Wire Line
+	4350 5050 4750 5050
+$Comp
+L Device:CP C?
+U 1 1 608AB2A7
+P 4350 5400
+AR Path="/608AB2A7" Ref="C?"  Part="1" 
+AR Path="/60A4D645/60B1EE3B/608AB2A7" Ref="C?"  Part="1" 
+AR Path="/60888782/608AB2A7" Ref="C801"  Part="1" 
+F 0 "C801" H 4468 5446 50  0000 L CNN
+F 1 "10µF" H 4468 5355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_4x5.4" H 4388 5250 50  0001 C CNN
+F 3 "~" H 4350 5400 50  0001 C CNN
+	1    4350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 608AB2AD
+P 5550 5400
+AR Path="/608AB2AD" Ref="C?"  Part="1" 
+AR Path="/60A4D645/60B1EE3B/608AB2AD" Ref="C?"  Part="1" 
+AR Path="/60888782/608AB2AD" Ref="C802"  Part="1" 
+F 0 "C802" H 5668 5446 50  0000 L CNN
+F 1 "10µF" H 5668 5355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_4x5.4" H 5588 5250 50  0001 C CNN
+F 3 "~" H 5550 5400 50  0001 C CNN
+	1    5550 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5050 5550 5250
+Connection ~ 4350 5050
+$Comp
+L power:GND #PWR?
+U 1 1 608AB2B5
+P 5550 5700
+AR Path="/608AB2B5" Ref="#PWR?"  Part="1" 
+AR Path="/60A4D645/60B1EE3B/608AB2B5" Ref="#PWR?"  Part="1" 
+AR Path="/60888782/608AB2B5" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 5550 5450 50  0001 C CNN
+F 1 "GND" H 5555 5527 50  0000 C CNN
+F 2 "" H 5550 5700 50  0001 C CNN
+F 3 "" H 5550 5700 50  0001 C CNN
+	1    5550 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608AB2BB
+P 4350 5700
+AR Path="/608AB2BB" Ref="#PWR?"  Part="1" 
+AR Path="/60A4D645/60B1EE3B/608AB2BB" Ref="#PWR?"  Part="1" 
+AR Path="/60888782/608AB2BB" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 4350 5450 50  0001 C CNN
+F 1 "GND" H 4355 5527 50  0000 C CNN
+F 2 "" H 4350 5700 50  0001 C CNN
+F 3 "" H 4350 5700 50  0001 C CNN
+	1    4350 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5050 4350 5250
+Wire Wire Line
+	4350 5550 4350 5700
+Wire Wire Line
+	5550 5550 5550 5700
+Wire Wire Line
+	5950 5050 5950 4700
+Connection ~ 5550 5050
+Wire Wire Line
+	5550 5050 5950 5050
+$Comp
+L Device:C C?
+U 1 1 608AB2C7
+P 5950 5400
+AR Path="/608AB2C7" Ref="C?"  Part="1" 
+AR Path="/60A4D645/60B1EE3B/608AB2C7" Ref="C?"  Part="1" 
+AR Path="/60888782/608AB2C7" Ref="C803"  Part="1" 
+F 0 "C803" H 6065 5446 50  0000 L CNN
+F 1 "100nF" H 6065 5355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5988 5250 50  0001 C CNN
+F 3 "~" H 5950 5400 50  0001 C CNN
+	1    5950 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5050 5950 5250
+Connection ~ 5950 5050
+$Comp
+L power:GND #PWR?
+U 1 1 608AB2CF
+P 5950 5700
+AR Path="/608AB2CF" Ref="#PWR?"  Part="1" 
+AR Path="/60A4D645/60B1EE3B/608AB2CF" Ref="#PWR?"  Part="1" 
+AR Path="/60888782/608AB2CF" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 5950 5450 50  0001 C CNN
+F 1 "GND" H 5955 5527 50  0000 C CNN
+F 2 "" H 5950 5700 50  0001 C CNN
+F 3 "" H 5950 5700 50  0001 C CNN
+	1    5950 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5550 5950 5700
+$Comp
+L power:+3.3V #PWR?
+U 1 1 608AB2D6
+P 5950 4700
+AR Path="/608AB2D6" Ref="#PWR?"  Part="1" 
+AR Path="/60A4D645/60B1EE3B/608AB2D6" Ref="#PWR?"  Part="1" 
+AR Path="/60888782/608AB2D6" Ref="#PWR0120"  Part="1" 
+F 0 "#PWR0120" H 5950 4550 50  0001 C CNN
+F 1 "+3.3V" H 5965 4873 50  0000 C CNN
+F 2 "" H 5950 4700 50  0001 C CNN
+F 3 "" H 5950 4700 50  0001 C CNN
+	1    5950 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J801
+U 1 1 609B7FCB
+P 4900 3250
+F 0 "J801" H 5008 3431 50  0000 C CNN
+F 1 "VIn+" H 5008 3340 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 4900 3250 50  0001 C CNN
+F 3 "~" H 4900 3250 50  0001 C CNN
+	1    4900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J802
+U 1 1 609B81C8
+P 4900 3500
+F 0 "J802" H 5008 3681 50  0000 C CNN
+F 1 "VIn-" H 5008 3590 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 4900 3500 50  0001 C CNN
+F 3 "~" H 4900 3500 50  0001 C CNN
+	1    4900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 609B8883
+P 5450 2950
+F 0 "#PWR0106" H 5450 2800 50  0001 C CNN
+F 1 "+5V" H 5465 3123 50  0000 C CNN
+F 2 "" H 5450 2950 50  0001 C CNN
+F 3 "" H 5450 2950 50  0001 C CNN
+	1    5450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 609B8C2C
+P 5450 3700
+F 0 "#PWR0107" H 5450 3450 50  0001 C CNN
+F 1 "GND" H 5455 3527 50  0000 C CNN
+F 2 "" H 5450 3700 50  0001 C CNN
+F 3 "" H 5450 3700 50  0001 C CNN
+	1    5450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 609B905A
+P 4350 4750
+F 0 "#PWR0109" H 4350 4600 50  0001 C CNN
+F 1 "+5V" H 4365 4923 50  0000 C CNN
+F 2 "" H 4350 4750 50  0001 C CNN
+F 3 "" H 4350 4750 50  0001 C CNN
+	1    4350 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3500 5450 3500
+Wire Wire Line
+	5450 3500 5450 3700
+Wire Wire Line
+	5450 3250 5450 2950
+Wire Wire Line
+	5100 3250 5450 3250
+$EndSCHEMATC
